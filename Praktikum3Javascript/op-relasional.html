@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Contoh Program Javascript</title>
+    </head>
+        <!--Seleksi Kondisi if else-->
+        <script language ="JavaScript">
+            // Function test terdapat javascript write dan prompt
+            function test(){
+                // method prompt() menampilkan kotak dialog inputan val1&val2
+                val1=window.prompt("Nilai I : ")
+                val2=window.prompt("Nilai II : ")
+                // Teks singkat pada laman
+                document.write("<br>"+"val1==val2"+"<br>")
+                // Eksekusi perbandingan setara dari inputan val1 dan val2
+                document.write(val1==val2) // jika nilai setara = true, tidak = false
+
+                // Teks singkat pada laman
+                document.write("<br>"+"val1!=val2"+"<br>")
+                // Eksekusi perbandingan tidak sama dari inputan val1 dan val2
+                document.write(val1!=val2) // jika nilai tidak sama = true, sama = false
+
+                // Teks singkat pada laman
+                document.write("<br>"+"val&gtval2"+"<br>")
+                // Eksekusi perbandingan val1 lebih dari inputan val2
+                document.write(val1>val2) // jika nilai val 1 lebih dari val 2 = true, kurang = false
+
+                // Teks singkat pada laman
+                document.write("<br>"+"val1&ltval2"+"<br>")
+                // Eksekusi perbandingan val1 kurang dari inputan val2
+                document.write(val1<val2) // jika nilai val 1 kurang dari val 2 = false, lebih  = true
+            }
+        </script>
+        <body>
+            <input type="button" name="button1" value="relational" onclick=test()>
+        </body>
+</html>

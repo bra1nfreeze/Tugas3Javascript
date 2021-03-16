@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Konversi Nilai Angka menjadi Huruf</title>
+    </head>
+    <body>
+        <!--Implementasi awal Javascript-->
+        <script language="Javascript">
+            // Membuat variabel nilai sebagai teks yang berkaitan
+            var nilai = prompt("Nilai (0-100): ", 0)
+            // Membuat variabel hasil
+            var hasil=""
+            // Deklarasi kondisi if pada variabel nilai
+            if (nilai>= 0)
+            hasil = "E" // jika kondisi input nilai 0-40 hasil = E
+            if (nilai >= 41)
+            hasil = "D" // jika kondisi input nilai 41-55 hasil = D
+            if (nilai>= 56)
+            hasil = "C" // jika kondisi input nilai 56-70 hasil = C
+            if (nilai >= 71)
+            hasil = "B" // jika kondisi input nilai 71-80 hasil = B
+            if (nilai >= 81)
+            hasil = "A" // jika kondisi input nilai 81-100 hasil = A
+
+            // Mencetak hasil dari inputan nilai
+            document.write("Hasil: "+ hasil)
+        </script>
+    </body>
+</html>

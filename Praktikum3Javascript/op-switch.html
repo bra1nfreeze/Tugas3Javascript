@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>Contoh Program Javascript</title>
+    </head>
+    <!--Implementasi awal Javascript-->
+    <script language="Javascript">
+        function test ()
+        {
+            // inputan nilai pada val1
+            val1=window.prompt("Input Nilai (1-5): ")
+
+            // pernyataan switch tindakan berbeda berdasarkan kondisi yang berbeda.
+            switch(val1)
+            {
+                // jika inputan 1
+                case "1": 
+                // output pada laman browser
+                document.write("Bilangan Satu")
+                // stop eksekusi
+                break
+
+                // jika inputan 2
+                case "2":
+                // output pada laman browser
+                document.write("Bilangan Dua")    
+                // stop eksekusi
+                break
+                
+                // jika inputan 3
+                case "3":
+                // output pada laman browser
+                document.write("Bilangan Tiga")
+                // stop eksekusi
+                break
+                // jika inputan 4
+                case "4":
+                // output pada laman browser
+                document.write("Bilangan Empat")
+                // stop eksekusi
+                break
+                // jika inputan 5
+                case "5":
+                // output pada laman browser
+                document.write("Bilangan Lima")
+                // stop eksekusi
+                break
+
+                // jika inputan diluar dari kategori
+                default:
+                // output pada laman browser
+                document.write("Bilangan Lainnya")
+            }
+        }
+    </script>
+    <body>
+        <input type="button" name="button1" value="switch" onclick=test()>
+    </body>
+</html>

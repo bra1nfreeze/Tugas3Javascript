@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <title>Program Kalkulator Sederhana</title>
+    </head>
+    <!--Implementasi awal Javascript-->
+    <script language="Javascript">
+        // Membuat fungsi penjumlahan
+        function tambah(){
+        // Evaluasi / eksekusi javascript berdasarkan inputan form textbox 1 & 2
+        a=eval(form.Nilai1.value)
+        b=eval(form.Nilai2.value)
+        // Eksekusi untuk menemukan hasil
+        hasil=a+b
+        // Output dari hasil yang telah dieksekusi
+        form.hasil.value = hasil
+        }
+
+        // Membuat fungsi pengurangan
+        function kurang(){
+        // Evaluasi / eksekusi javascript berdasarkan inputan form textbox 1 & 2
+        a=eval(form.Nilai1.value)
+        b=eval(form.Nilai2.value)
+        // Eksekusi untuk menemukan hasil
+        hasil=a-b
+        // Output dari hasil yang telah dieksekusi
+        form.hasil.value = hasil
+        }
+
+        // Membuat fungsi pembagian
+        function bagi(){
+        // Evaluasi / eksekusi javascript berdasarkan inputan form textbox 1 & 2
+        a=eval(form.Nilai1.value)
+        b=eval(form.Nilai2.value)
+        // Eksekusi untuk menemukan hasil
+        hasil=a/b
+        // Output dari hasil yang telah dieksekusi
+        form.hasil.value = hasil
+        }
+
+        // Membuat fungsi perkalian
+        function kali(){
+        a=eval(form.Nilai1.value)
+        b=eval(form.Nilai2.value)
+        // Eksekusi untuk menemukan hasil
+        hasil=a*b
+         // Output dari hasil yang telah dieksekusi
+        form.hasil.value = hasil
+        }
+        
+        // Menampilkan histori terakhir kali disimpan pada kodingan ini berdasarkan sistem.
+        document.write("Dimodifikasi terakhir pada "+document.lastModified)
+    </script>
+    <body>
+        <h3>Kalkulator</h3>
+        <!--Membuat laman form pada kalkulator-->
+        <form name="form">
+            Angka Pertama: <br>
+            <!--Membuat Textbox dengan nama Nilai1-->
+            <input type="text" name="Nilai1"> <br>
+            Angka Kedua: <br>
+            <!--Membuat Textbox dengan nama Nilai2-->
+            <input type="text" name="Nilai2"> <br>
+            <!--Membuat tombol button dengan reaksi ketika diklik-->
+            <input type="button" onclick="tambah()" Value="+">
+            <input type="button" onclick="kurang()" Value="-">
+            <input type="button" onclick="bagi()" Value="/">
+            <input type="button" onclick="kali()" Value="x">
+            <!--Membuat kolom teks berdasarkan Hasil dari kalkulator-->
+            <p>Hasil : <br>
+            <input type="text" name="hasil" disabled="true"><br></p>
+        </form>
+    </body>
+</html>

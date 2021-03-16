@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Writing into an HTML Element with Javascript</title>
+    </head>
+    <body>
+        <!--memberi nilai unik id pada paragraph-->
+        <p id="greet"></p> 
+        <p id="result"></p>
+        <script>
+            // metode mengembalikan elemen atribut id "greet"
+            document.getElementById("greet").innerHTML = "Hello Gatot!";
+            // Memberi nilai isi dari variabel
+            var x = 50;
+            var y = 30;
+            //Menjumlah nilai variabel x dan y
+            var sum = x+y;
+            // metode mengubah html dari elemen <p> dengan varibl sum
+            document.getElementById("result").innerHTML = sum;
+        </script>
+    </body>
+</html>
